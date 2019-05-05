@@ -1,26 +1,54 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const screenWidth = window.screen.width
+const maxBoxWidth = window.screen.width * 20 / 100
+const min = -10
+// const left = Math.floor(Math.random() * (max - min + 1)) + min;
+
+function setInitialPosition() {
+  var theThings = document.querySelectorAll(".logo-move");
+  for (let i = 0; i < theThings.length; i++) {
+    var theThing = theThings[i];
+    let size = `${Math.floor(Math.random() * (maxBoxWidth - 10 + 1)) + 10}px`;
+    theThing.style.left = `${Math.floor(Math.random() * (screenWidth - min + 1)) + min}px`;
+    theThing.style.width = size;
+    theThing.style.height = size;
+    // theThing.style.animationDuration = `${Math.floor(Math.random() * (20 - 10 + 1)) + 10}s`;
+  }
+}
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      setInitialPosition()
+    }, 20000);
+  }
+
+  render() {
+    return (
+      <div className="container" >
+        <div>
+          <div className="logo-move" />
+          <div className="logo-move" />
+          <div className="logo-move" />
+          <div className="logo-move" />
+          <div className="logo-move" />
+        </div>
+        <div className='content'>
+
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

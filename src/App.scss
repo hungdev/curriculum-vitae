@@ -1,0 +1,96 @@
+.container {
+	width: 100wh;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #8DC778, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+.logo-move {
+  /* animation: App-logo-spin infinite 20s linear; */
+  // height: 40vmin;
+	pointer-events: none;
+	
+	animation: move 2s infinite;
+	position: absolute;
+	// left: 500px;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.1r);
+	animation-duration: 20s;
+	animation-direction: reverse;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	border-radius: 5px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes move {
+	from{
+		top: -50%;
+		transform: rotate(360deg);
+}
+	to{
+		transform: rotate(0deg);
+			top: 100%;
+	}
+}
+
+.content {
+	z-index: 1;
+}
