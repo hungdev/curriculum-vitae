@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import "antd/dist/antd.css";
 
 const screenWidth = window.screen.width
 const maxBoxWidth = window.screen.width * 20 / 100
@@ -11,7 +12,7 @@ function setInitialPosition() {
   var theThings = document.querySelectorAll(".logo-move");
   for (let i = 0; i < theThings.length; i++) {
     var theThing = theThings[i];
-    let size = `${Math.floor(Math.random() * (maxBoxWidth - 10 + 1)) + 10}px`;
+    let size = `${Math.floor(Math.random() * (maxBoxWidth - 20 + 1)) + 20}px`;
     theThing.style.left = `${Math.floor(Math.random() * (screenWidth - min + 1)) + min}px`;
     theThing.style.width = size;
     theThing.style.height = size;
