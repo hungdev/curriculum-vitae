@@ -39,7 +39,7 @@ class App extends Component {
 
   render() {
     return (
-      <Row type='flex' align='center' >
+      <Row type='flex' >
         <Col className='control-box'>
           <ControlBox onChangeView={(isView) => this.setState({ isView })} />
         </Col>

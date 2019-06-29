@@ -20,13 +20,13 @@ class About extends Component {
     super(props);
     this.state = {
       name: '',
-      email: '',
+      subject: '',
       message: ''
     };
   }
 
   render() {
-    const { email, message, name } = this.state
+    const { subject, message, name } = this.state
     return (
       <div className='about-container'>
         <Row >
@@ -69,9 +69,9 @@ class About extends Component {
               />
             </Col>
             <Col xl={10} offset={4}>
-              <Input placeholder="Email Address"
-                onChange={e => this.setState({ email: e.target.value })}
-                value={this.state.email}
+              <Input placeholder="Subject"
+                onChange={e => this.setState({ subject: e.target.value })}
+                value={this.state.subject}
               />
             </Col>
           </Row>
@@ -82,7 +82,7 @@ class About extends Component {
             />
           </Row>
           <Col className='send-message-contact'>
-            <a href={`mailto:${email}?Subject=${name}&body=${message}`} style={{ color: 'black' }}>Send Message</a>
+            <a href={`mailto:${process.env.REACT_APP_MY_MAIL}?Subject=${subject}&body=Hi Hung! Im ${name} \n ${message}`} style={{ color: 'black' }}>Send Message</a>
             <Icon type="swap-right" className='icon-style' />
           </Col>
         </Row>
