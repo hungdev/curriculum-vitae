@@ -1,0 +1,88 @@
+.about-container {
+  background-color: white;
+  /* display: flex; */
+  /* flex-direction: column; */
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 5px 5px 0px;
+  border-style: solid;
+  border-color: transparent;
+  color: black;
+  padding: 20px;
+  /* overflow: scroll; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.about-content {
+  background-color: white
+}
+.txt-about-me {
+  margin: 0 0 15px 0;
+  padding: 0 0 5px 0;
+  position: relative;
+  font-size: 17px;
+  color: #171717;
+  line-height: 21px;
+  font-weight: 500;
+  margin-left: 20px
+}
+.mar-top-header {
+  margin-top: 40px
+}
+.feed-back {
+  text-align: center
+}
+.row-quote {
+  padding: 20px;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row
+}
+.open-quote {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 14px;
+  height: 14px;
+  background: url(../assets/quote.svg) no-repeat;
+  background-size: contain;
+  opacity: .65;
+}
+.close-quote {
+  content: '';
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 14px;
+  height: 14px;
+  background: url(../assets/quote.svg) no-repeat;
+  background-size: contain;
+  opacity: .65;
+  transform: rotate(180deg);
+}
+.warp-avatar-user-comment{
+  border-radius: 40px;
+  border-style: solid;
+  overflow: hidden;
+  border-color: transparent;
+}
+
+.avatar-user-comment {
+  height: 70px;
+  width: 70px;
+}
+.slick-dots {
+  color: green
+}
+
+.send-message-contact {
+  flex: 1;
+  margin-top: 25px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}

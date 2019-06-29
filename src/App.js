@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import "antd/dist/antd.css";
+import Content from './screens/Content'
 
 const screenWidth = window.screen.width
 const maxBoxWidth = window.screen.width * 20 / 100
@@ -34,6 +35,10 @@ class App extends Component {
     }, 20000);
   }
 
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   render() {
     return (
       <div className="container" >
@@ -45,7 +50,7 @@ class App extends Component {
           <div className="logo-move" />
         </div>
         <div className='content'>
-
+          <Content />
         </div>
       </div>
     );

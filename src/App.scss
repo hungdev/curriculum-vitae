@@ -1,3 +1,6 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+
 .container {
 	width: 100wh;
 	height: 100vh;
@@ -7,6 +10,10 @@
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	display: flex
 }
 
 @-webkit-keyframes Gradient {
@@ -57,7 +64,7 @@
 	width: 100px;
 	height: 100px;
 	padding: 10px;
-	background-color: rgba(255, 255, 255, 0.1r);
+	background-color: rgba(255, 255, 255, 0.1);
 	animation-duration: 20s;
 	animation-direction: reverse;
 	animation-iteration-count: infinite;
@@ -93,4 +100,10 @@
 
 .content {
 	z-index: 1;
+	height: 70%;
+	// justify-content: center;
+	// align-items: center;
+	// display: flex;
+	// flex: 1;
+	// align-self: center
 }

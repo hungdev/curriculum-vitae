@@ -1,0 +1,19 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  z-index: 1;
+}
+
+.card:hover {
+  box-shadow: 11px 15px 5px 0px rgba(0,0,0,0.2);
+}
+.control-box {
+  height: 350px;
+  width: 80px;
+  background-color: white;
+  margin-top: 20px;
+  border-style: solid;
+  margin-right: 10px;
+  border-radius: 5px
+}

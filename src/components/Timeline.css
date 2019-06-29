@@ -1,0 +1,22 @@
+.time-timeline {
+  color: #78cc6d;
+  font-size: 11px;
+}
+.position-timeline {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #171717;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.place-timeline {
+  margin: 0 0 10px 0;
+  font-size: 11px;
+  color: #999;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.detail-timeline {
+
+}

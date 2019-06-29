@@ -1,0 +1,18 @@
+.control-box-container {
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.op-control {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 10px 0;
+  cursor: pointer;
+}

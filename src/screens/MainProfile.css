@@ -1,0 +1,98 @@
+.background-profile {
+  height: 50%;
+  width: 100%;
+  
+}
+.row-clip-path {
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  flex: 1;
+  display: flex;
+}
+
+.left-clip-path {
+  -webkit-clip-path: polygon(0 40%, 0% 100%, 100% 100%);
+  clip-path: polygon(0 40%, 0% 100%, 100% 100%);
+  flex: 1;
+  background-color: white
+}
+
+.right-clip-path {
+  -webkit-clip-path: polygon(100% 71%, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 71%, 0% 100%, 100% 100%);
+  flex: 1;
+  background-color: white
+}
+
+.avatar-profile {
+  height: 130px;
+  width: 130px
+}
+.warp-avatar {
+  position: absolute;
+  bottom: calc(50% - 85px );
+  left: calc(50% - 75px);
+  border-radius: 75px;
+  border-style: solid;
+  border-color: white;
+  overflow: hidden;
+}
+.profile-name {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  font-weight: bold;
+   text-align: center;
+  font-size: 30px;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+}
+.skill-name{ 
+  color: #78cc6d;
+  font-size: 15px;
+  text-align: center;
+  word-wrap: break-word;
+}
+.row-social{ 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center
+}
+.icon-style{
+  color: black;
+  font-size:  18px;
+  margin: 10px;
+  cursor: pointer;
+}
+.row-cv-profile{
+  display: flex;
+  flex: 1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;  
+  height: 60px;
+  width: 100%
+}
+.col-bottom-profile {
+  border: solid #ccc;
+  border-width: 1px 1px 0px 0px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.contact-bottom-profile {
+  border: solid #ccc;
+  border-width: 1px 0px 0px 0px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+

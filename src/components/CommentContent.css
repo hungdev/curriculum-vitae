@@ -1,0 +1,49 @@
+
+.mar-top-header {
+  margin-top: 40px
+}
+.feed-back {
+  text-align: center
+}
+.row-quote {
+  padding: 20px;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row
+}
+.open-quote {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 14px;
+  height: 14px;
+  background: url(../assets/quote.svg) no-repeat;
+  background-size: contain;
+  opacity: .65;
+}
+.close-quote {
+  content: '';
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 14px;
+  height: 14px;
+  background: url(../assets/quote.svg) no-repeat;
+  background-size: contain;
+  opacity: .65;
+  transform: rotate(180deg);
+}
+.warp-avatar-user-comment{
+  border-radius: 40px;
+  border-style: solid;
+  overflow: hidden;
+  border-color: transparent;
+}
+
+.avatar-user-comment {
+  height: 70px;
+  width: 70px;
+}
