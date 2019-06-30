@@ -4,17 +4,17 @@ Clone idea from : https://themeforest.net/item/ryan-vcard-resume-cv-template/215
 
 How to run?
 
-*Clone project: 
+* Clone project: 
 ```
 git clone git@github.com:hungdev/curriculum-vitae.git
 ```
 
-*Install library:
+* Install library:
 ```
 npm i
 ```
 
-*Start project:
+* Start project:
 ```
 npm start
 ```
