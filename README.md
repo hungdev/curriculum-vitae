@@ -2,6 +2,8 @@ Clone idea from : https://themeforest.net/item/ryan-vcard-resume-cv-template/215
 
 <img src="https://github.com/hungdev/curriculum-vitae/blob/master/demo-vcard.png?raw=true"/>
 
+#The project is in the process of completion
+
 How to run?
 
 * Clone project: 
