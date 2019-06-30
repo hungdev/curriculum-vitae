@@ -16,3 +16,12 @@
   margin: 10px 0;
   cursor: pointer;
 }
+.op-control:hover {
+  zoom: 120%;
+}
+.text-control {
+  font-size: 12px;
+}
+.text-control:hover {
+  color: red
+}

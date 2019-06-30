@@ -23,23 +23,23 @@ class App extends Component {
       <Row className='control-box-container'>
         <Col className='op-control' onClick={() => this.onChangeView('about')}>
           <IoMdPerson size={22} color='#78cc6d' />
-          <Col style={{ fontSize: 12 }}>ABOUT</Col>
+          <Col className='text-control'>ABOUT</Col>
         </Col>
         <Col className='op-control' onClick={() => this.onChangeView('resume')}>
           <IoMdListBox size={22} color='#78cc6d' />
-          <Col style={{ fontSize: 12 }}>RESUME</Col>
+          <Col className='text-control'>RESUME</Col>
         </Col>
         <Col className='op-control' onClick={() => this.onChangeView('work')}>
           <IoIosBrush size={22} color='#78cc6d' />
-          <Col style={{ fontSize: 12 }}>WORKS</Col>
+          <Col className='text-control'>WORKS</Col>
         </Col>
         <Col className='op-control' onClick={() => this.onChangeView('blog')}>
           <IoMdBeer size={22} color='#78cc6d' />
-          <Col style={{ fontSize: 12 }}>BLOG</Col>
+          <Col className='text-control'>BLOG</Col>
         </Col>
         <Col className='op-control' onClick={() => this.onChangeView('contact')}>
           <IoIosAt size={22} color='#78cc6d' />
-          <Col style={{ fontSize: 12 }}>CONTACT</Col>
+          <Col className='text-control'>CONTACT</Col>
         </Col>
       </Row>
     );

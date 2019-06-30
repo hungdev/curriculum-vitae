@@ -18,7 +18,7 @@ const officePosition = {
  */
 const MapWithAMarker = withScriptjs(withGoogleMap(props =>
   <GoogleMap
-    defaultZoom={15}
+    defaultZoom={13}
     defaultCenter={officePosition}
   >
     <Marker

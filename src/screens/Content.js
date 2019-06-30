@@ -6,10 +6,10 @@ import MainProfile from './MainProfile'
 import About from './About'
 import Contact from './Contact'
 import Resume from './Resume'
+import Works from './Works'
+import Blog from './Blog'
 import ControlBox from './ControlBox'
 import './Content.css'
-import { IoMdPerson } from "react-icons/io";
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -26,9 +26,9 @@ class App extends Component {
       case 'resume':
         return <Resume />
       case 'work':
-        return <About />
+        return <Works />
       case 'blog':
-        return <About />
+        return <Blog />
       case 'contact':
         return <Contact />
 
@@ -44,7 +44,7 @@ class App extends Component {
           <ControlBox onChangeView={(isView) => this.setState({ isView })} />
         </Col>
         <Col style={styles.profile} className='card'>
-          <MainProfile />
+          <MainProfile onContact={() => this.setState({ isView: 'contact' })} />
         </Col>
         <Col style={styles.about}>
           {this.switchView()}

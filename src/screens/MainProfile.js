@@ -32,10 +32,11 @@ class App extends Component {
             React, React Native, Nodejs Developer
           </Col>
           <Col className='row-social'>
+            <Icon type="facebook" className='icon-style' onClick={() => window.open('https://fb.com/hungvu.net')} />
             <Icon type="dribbble" className='icon-style' />
             <Icon type="twitter" className='icon-style' />
-            <Icon type="github" className='icon-style' />
-            <Icon type="skype" className='icon-style' />
+            <Icon type="github" className='icon-style' onClick={() => window.open('https://github.com/hungdev')} />
+            <Icon type="skype" className='icon-style' onClick={() => window.open('skype:live:hungns126_2?chat')} />
           </Col>
         </Row>
         <Row className='row-cv-profile'>
@@ -43,7 +44,7 @@ class App extends Component {
             <Col style={{ color: 'black', textAlign: 'center' }}>Download CV</Col>
             <Icon type="download" className='icon-style' />
           </Col>
-          <Col className='contact-bottom-profile'>
+          <Col className='contact-bottom-profile' onClick={() => this.props.onContact()}>
             <Col style={{ color: 'black', textAlign: 'center' }}>Contact Me</Col>
             <Icon type="swap-right" className='icon-style' />
           </Col>

@@ -55,7 +55,7 @@ class Resume extends Component {
               <Skill percentage={'90%'} label='React Native' />
               <Skill percentage={'80%'} label='React JS' style={{ marginTop: 20 }} />
               <Skill percentage={'50%'} label='Node JS' style={{ marginTop: 20 }} />
-              <Skill percentage={'70%'} label='Html / Css' style={{ marginTop: 20 }} />
+              <Skill percentage={'60%'} label='Html / Css' style={{ marginTop: 20 }} />
               <Skill percentage={'60%'} label='CI / CD' style={{ marginTop: 20 }} />
             </Row>
           </Col>
