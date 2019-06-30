@@ -40,7 +40,7 @@ class App extends Component {
           </Col>
         </Row>
         <Row className='row-cv-profile'>
-          <Col className='col-bottom-profile'>
+          <Col className='col-bottom-profile' onClick={() => window.open('https://drive.google.com/file/d/1arCAgdW9c9UE6OBdXwCWd-Ax3d2wDKPK/view?usp=sharing')}>
             <Col style={{ color: 'black', textAlign: 'center' }}>Download CV</Col>
             <Icon type="download" className='icon-style' />
           </Col>

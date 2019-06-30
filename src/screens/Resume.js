@@ -4,7 +4,8 @@ import "antd/dist/antd.css";
 import { Row, Col } from 'antd';
 import './Resume.css';
 import { IoIosBriefcase, IoIosSchool, IoIosCode, IoMdGlobe } from "react-icons/io";
-import elements from './data/timeline'
+import workingTimeline from './data/workingTimeline'
+import educationTimeline from './data/educationTimeline'
 import Timeline from '../components/Timeline'
 import Skill from '../components/Skill'
 
@@ -29,7 +30,7 @@ class Resume extends Component {
               <Col>EXPERIENCE</Col>
             </Row>
             <Row style={{ paddingRight: 10 }}>
-              <Timeline elements={elements} />
+              <Timeline elements={workingTimeline} />
             </Row>
           </Col>
           <Col style={{ flex: 1 }}>
@@ -38,7 +39,7 @@ class Resume extends Component {
               <Col>EDUCATION</Col>
             </Row>
             <Row style={{ paddingRight: 10 }}>
-              <Timeline elements={elements} />
+              <Timeline elements={educationTimeline} />
             </Row>
           </Col>
         </Row>
