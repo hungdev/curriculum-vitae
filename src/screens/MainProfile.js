@@ -33,10 +33,10 @@ class App extends Component {
           </Col>
           <Col className='row-social'>
             <Icon type="facebook" className='icon-style' onClick={() => window.open('https://fb.com/hungvu.net')} />
-            <Icon type="dribbble" className='icon-style' />
-            <Icon type="twitter" className='icon-style' />
             <Icon type="github" className='icon-style' onClick={() => window.open('https://github.com/hungdev')} />
             <Icon type="skype" className='icon-style' onClick={() => window.open('skype:live:hungns126_2?chat')} />
+            <Icon type="dribbble" className='icon-style' />
+            <Icon type="twitter" className='icon-style' />
           </Col>
         </Row>
         <Row className='row-cv-profile'>

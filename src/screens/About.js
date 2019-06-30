@@ -31,8 +31,7 @@ class About extends Component {
         </Row>
         <Row style={{ padding: 20, borderStyle: 'solid', borderColor: '#ccc', borderWidth: 1 }}>
           <Col>
-            I am Cee Vu, web designer from USA, California. I have rich experience in web site design and building and customization,
-            also I am good at wordpress. I love to talk with you about our unique.
+            I am Hung Vu, reactjs, react native developer from Ha Noi, Viet Nam. I have rich experience in website, mobile coding and building and customization. I love to talk with you about my unique.
           </Col>
           <Row style={{ display: 'flex', flexDirection: 'row' }}>
             <Row style={{ display: 'flex', flexDirection: 'row', marginTop: 20, flex: 1 }}>
