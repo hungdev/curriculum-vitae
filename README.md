@@ -14,6 +14,9 @@ git clone git@github.com:hungdev/curriculum-vitae.git
 npm i
 ```
 
+* Create env
+rename .env.example to .env and fill information detail to .env file
+
 * Start project:
 ```
 npm start
