@@ -28,6 +28,13 @@ const elements = [
     src: 'https://kindlelover.com/',
     style: { flexFlow: 'wrap' }
   },
+  {
+    name: 'VCard',
+    image: 'https://github.com/hungdev/curriculum-vitae/raw/master/demo-vcard.png?raw=true',
+    detail: 'Opensource vcard project, wrote by reactjs',
+    src: 'https://github.com/hungdev/curriculum-vitae',
+    style: { flexFlow: 'wrap' }
+  },
 
 ]
 export default elements;
