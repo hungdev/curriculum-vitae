@@ -15,6 +15,7 @@ npm i
 ```
 
 * Create env
+
 rename .env.example to .env and fill information detail to .env file
 
 * Start project:
